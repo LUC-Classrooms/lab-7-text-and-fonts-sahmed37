@@ -4,14 +4,16 @@
 
 function setup() {
   createCanvas(640, 240);
-  textFont("Arial");
+  textFont("Verdana");
 }
 
 function draw() {
   background(200);
-  textSize(16);
-  text("one small step for a man ...", 20, 60);
-  textSize(32);
-  text("one giant leap for mankind.", 20, 160);
-
+  textSize(12);
+  text("Scorpion once said...", 20, 60);
+  if(mouseIsPressed){
+    textSize(24);
+  text("GET OVER HERE!", 20, 160);
+  }
 }
+  
